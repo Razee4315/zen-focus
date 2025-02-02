@@ -1,7 +1,7 @@
 // web/p5.sketch.js
 
 // Use a global variable attached to window so that script.js can update it.
-window.currentTheme = "particle";
+window.currentTheme = "waves";
 
 let particles = [];
 let stars = [];
