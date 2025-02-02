@@ -1,0 +1,76 @@
+<!-- web/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zen Focus – Productivity & Relaxation Hub</title>
+  <!-- Tailwind CSS from CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="/eel.js"></script>
+  <!-- p5.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+</head>
+<body class="bg-transparent text-gray-100">
+  <!-- Full-page interactive background canvas (p5.js attaches here) -->
+  <div id="bg-canvas"></div>
+
+  <!-- Main content container with glassmorphic style -->
+  <div class="content-container relative z-10 max-w-6xl mx-auto p-6 space-y-10">
+    <header class="flex flex-col items-center animate-fadeInDown">
+      <h1 class="text-5xl font-bold font-poppins drop-shadow-lg mb-4">Zen Focus</h1>
+      <!-- Animation Theme Selector -->
+      <div>
+        <select id="animation-select" class="p-2 rounded-lg bg-black bg-opacity-100 text-gray-100 focus:outline-none">
+          <option value="particle">Particle Network</option>
+          <option value="waves">Flowing Waves</option>
+          <option value="bubbles">Floating Bubbles</option>
+          <option value="stars">Star Field</option>
+          <option value="rain">Calm Rain</option>
+        </select>
+      </div>
+    </header>
+    
+
+    <!-- Pomodoro Timer Section -->
+    <section class="glass-container animate-fadeIn">
+      <h2 class="section-title">Pomodoro Timer</h2>
+      <div id="timer-container" class="relative h-64 flex justify-center items-center mb-6">
+        <!-- Digital timer (visible by default) -->
+        <div id="digital-timer" class="text-7xl font-mono font-bold drop-shadow-2xl">25:00</div>
+        <!-- Analog timer canvas (hidden by default) -->
+        <canvas id="analog-timer" width="240" height="240" class="absolute hidden rounded-full"></canvas>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4">
+        <button id="start-timer" class="timer-btn bg-green-500">Start</button>
+        <button id="stop-timer" class="timer-btn bg-yellow-500">Stop</button>
+        <button id="reset-timer" class="timer-btn bg-red-500">Reset</button>
+        <button id="toggle-timer-style" class="timer-btn bg-blue-500">Toggle Timer Style</button>
+      </div>
+    </section>
+
+    <!-- Task Manager Section -->
+    <section class="glass-container animate-fadeIn">
+      <h2 class="section-title">Daily Task Manager</h2>
+      <div class="flex gap-4 mb-4">
+        <input id="new-task" type="text" placeholder="Enter a new task..." class="flex-1 input-field">
+        <button id="add-task" class="timer-btn bg-green-500">Add Task</button>
+      </div>
+      <ul id="task-list" class="space-y-3"></ul>
+    </section>
+  </div>
+
+  <!-- GitHub Attribution -->
+  <div id="github-attribution">
+    <a href="https://github.com/Razee4315" target="_blank">
+      @Saqlain Abbas | GitHub
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="p5.sketch.js"></script>
+</body>
+</html>

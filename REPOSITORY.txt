@@ -1,0 +1,17 @@
+# Zen Focus Repository Setup
+
+Repository Owner: Saqlain Abbas
+GitHub Username: Razee4315
+Contact Email: saqlainrazee@gmail.com or saqlainabbasf23@nutech.edu.pk
+
+## Initial Setup Commands
+```bash
+git init
+git add .
+git commit -m "Initial commit: Zen Focus Task Management App"
+git branch -M main
+git remote add origin https://github.com/Razee4315/zen-focus.git
+git push -u origin main
+```
+
+Note: Replace the remote URL with your actual GitHub repository URL after creating it.

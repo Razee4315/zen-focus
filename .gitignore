@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Task data
+tasks.json
+
+# Virtual environments
+venv/
+env/
+.env/
+
+# IDE files
+.vscode/
+.idea/
+
+# Misc
+.DS_Store
+*.log
