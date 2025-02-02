@@ -3,6 +3,12 @@
 ## Overview
 Zen Focus is a minimalist task management application built with Python and Eel, providing a simple and clean interface for tracking your daily tasks.
 
+## Project Screenshots
+Here are some snapshots of our Zen-Focus interface:
+![Screenshot 1](/screenshots/1.jpg)
+![Screenshot 2](/screenshots/2.jpg)
+![Screenshot 3](/screenshots/3.jpg)
+
 ## Features
 - Add new tasks
 - Remove existing tasks
