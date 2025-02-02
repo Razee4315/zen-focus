@@ -20,12 +20,17 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+      - name: Prepare Web Files
+        run: |
+          mkdir -p _site
+          cp -r web/* _site/
+          echo "Contents of _site directory:"
+          ls -la _site
+      
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: github-pages
-          path: './web'
-          retention-days: 1
+          path: '_site'
   
   deploy:
     needs: build
