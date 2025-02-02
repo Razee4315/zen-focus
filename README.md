@@ -27,10 +27,17 @@ Zen Focus is a minimalist task management application built with Python and Eel,
    python main.py
    ```
 
+## Deployment
+### GitHub Pages
+This project is deployed automatically to GitHub Pages using GitHub Actions. 
+- The web interface is hosted in the `web/` directory
+- Deployment is triggered on pushes to the `master` branch
+
 ## Technologies
 - Python
 - Eel
 - HTML/CSS/JavaScript
+- GitHub Actions
 
 ## Author
 - **Saqlain Abbas**
