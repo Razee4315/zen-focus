@@ -46,3 +46,6 @@ This project is deployed automatically to GitHub Pages using GitHub Actions.
 
 ## License
 MIT License
+
+## Note
+Due to some reason the animation are not being toggle. Install it on your own computer it will work.
